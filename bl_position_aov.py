@@ -22,7 +22,9 @@ class SCENE_OT_positionAOV(bpy.types.Operator):
     bl_label = "World Position AOV"
     bl_options = {'REGISTER', 'UNDO'}
     
-
+    @classmethod
+    def poll(cls, context):
+        return context.area.type == 'PROPERTIES'
     
     def execute(self, context):
         
