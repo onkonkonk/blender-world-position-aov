@@ -103,8 +103,8 @@ class SCENE_PT_positionAOV(bpy.types.Panel):
     bl_space_type = 'PROPERTIES'
     bl_region_type = 'WINDOW'
     bl_context = "view_layer"
-    bl_parent_id = "VIEWLAYER_PT_layer_passes"
-    
+    #bl_parent_id = "CYCLES_RENDER_PT_passes"
+    #bl_parent_id = "VIEWLAYER_PT_layer_passes"
 
     
     def draw(self, context):
